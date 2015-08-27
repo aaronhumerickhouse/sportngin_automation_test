@@ -1,0 +1,1007 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: TasksPage
+  
+    &mdash; Documentation by YARD 0.8.2.1
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index (T)</a> &raquo;
+    
+    
+    <span class="title">TasksPage</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: TasksPage
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName"><span class='object_link'><a href="DefaultPage.html" title="DefaultPage (class)">DefaultPage</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next"><span class='object_link'><a href="PageObject.html" title="PageObject (class)">PageObject</a></span></li>
+          
+            <li class="next"><span class='object_link'><a href="DefaultPage.html" title="DefaultPage (class)">DefaultPage</a></span></li>
+          
+            <li class="next">TasksPage</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">src/pages/tasks_page.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Page Object for the Tasks Page</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#task-class_method" title="task (class method)">+ (Object) <strong>task</strong>(element_name, selector) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>For each task() defined in the page object these methods are added:</p>
+<ul><li>
+<p>&lt;name&gt; - Returns the task.</p>
+</li></ul>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tasks-class_method" title="tasks (class method)">+ (Object) <strong>tasks</strong>(element_name, selector) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>For each tasks() defined in the page object these methods are added:</p>
+<ul><li>
+<p>&lt;name&gt; - Returns the tasks.</p>
+</li></ul>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#create_new_task-instance_method" title="#create_new_task (instance method)">- (Object) <strong>create_new_task</strong>(data) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Creates a new task.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#move_task-instance_method" title="#move_task (instance method)">- (Object) <strong>move_task</strong>(initial, target) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Moves a task well to a specific index within the completed column.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#move_task_in_completed-instance_method" title="#move_task_in_completed (instance method)">- (Object) <strong>move_task_in_completed</strong>(from_index, to_index) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Moves a task well to a specific index within the completed column.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#move_task_in_in_progress-instance_method" title="#move_task_in_in_progress (instance method)">- (Object) <strong>move_task_in_in_progress</strong>(from_index, to_index) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Moves a task well to a specific index within the in_progress column.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#move_task_in_to_do-instance_method" title="#move_task_in_to_do (instance method)">- (Object) <strong>move_task_in_to_do</strong>(from_index, to_index) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Moves a task well to a specific index within the to_do column.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="DefaultPage.html" title="DefaultPage (class)">DefaultPage</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="DefaultPage.html#navigate_to_home-instance_method" title="DefaultPage#navigate_to_home (method)">#navigate_to_home</a></span>, <span class='object_link'><a href="DefaultPage.html#open_about_modal-instance_method" title="DefaultPage#open_about_modal (method)">#open_about_modal</a></span>, <span class='object_link'><a href="DefaultPage.html#open_contact_modal-instance_method" title="DefaultPage#open_contact_modal (method)">#open_contact_modal</a></span>, <span class='object_link'><a href="DefaultPage.html#open_privacy_policy_modal-instance_method" title="DefaultPage#open_privacy_policy_modal (method)">#open_privacy_policy_modal</a></span>, <span class='object_link'><a href="DefaultPage.html#sign_out-instance_method" title="DefaultPage#sign_out (method)">#sign_out</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="PageObject.html" title="PageObject (class)">PageObject</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="PageObject.html#area-class_method" title="PageObject.area (method)">area</a></span>, <span class='object_link'><a href="PageObject.html#areas-class_method" title="PageObject.areas (method)">areas</a></span>, <span class='object_link'><a href="PageObject.html#button-class_method" title="PageObject.button (method)">button</a></span>, <span class='object_link'><a href="PageObject.html#buttons-class_method" title="PageObject.buttons (method)">buttons</a></span>, <span class='object_link'><a href="PageObject.html#checkbox-class_method" title="PageObject.checkbox (method)">checkbox</a></span>, <span class='object_link'><a href="PageObject.html#checkboxes-class_method" title="PageObject.checkboxes (method)">checkboxes</a></span>, <span class='object_link'><a href="PageObject.html#div-class_method" title="PageObject.div (method)">div</a></span>, <span class='object_link'><a href="PageObject.html#divs-class_method" title="PageObject.divs (method)">divs</a></span>, <span class='object_link'><a href="PageObject.html#dlist-class_method" title="PageObject.dlist (method)">dlist</a></span>, <span class='object_link'><a href="PageObject.html#dlists-class_method" title="PageObject.dlists (method)">dlists</a></span>, <span class='object_link'><a href="PageObject.html#dropdown-class_method" title="PageObject.dropdown (method)">dropdown</a></span>, <span class='object_link'><a href="PageObject.html#dropdowns-class_method" title="PageObject.dropdowns (method)">dropdowns</a></span>, <span class='object_link'><a href="PageObject.html#element-class_method" title="PageObject.element (method)">element</a></span>, <span class='object_link'><a href="PageObject.html#elements-class_method" title="PageObject.elements (method)">elements</a></span>, <span class='object_link'><a href="PageObject.html#expected_element-class_method" title="PageObject.expected_element (method)">expected_element</a></span>, <span class='object_link'><a href="PageObject.html#file_field-class_method" title="PageObject.file_field (method)">file_field</a></span>, <span class='object_link'><a href="PageObject.html#file_fields-class_method" title="PageObject.file_fields (method)">file_fields</a></span>, <span class='object_link'><a href="PageObject.html#font-class_method" title="PageObject.font (method)">font</a></span>, <span class='object_link'><a href="PageObject.html#fonts-class_method" title="PageObject.fonts (method)">fonts</a></span>, <span class='object_link'><a href="PageObject.html#form-class_method" title="PageObject.form (method)">form</a></span>, <span class='object_link'><a href="PageObject.html#forms-class_method" title="PageObject.forms (method)">forms</a></span>, <span class='object_link'><a href="PageObject.html#h1-class_method" title="PageObject.h1 (method)">h1</a></span>, <span class='object_link'><a href="PageObject.html#h1s-class_method" title="PageObject.h1s (method)">h1s</a></span>, <span class='object_link'><a href="PageObject.html#h2-class_method" title="PageObject.h2 (method)">h2</a></span>, <span class='object_link'><a href="PageObject.html#h2s-class_method" title="PageObject.h2s (method)">h2s</a></span>, <span class='object_link'><a href="PageObject.html#h3-class_method" title="PageObject.h3 (method)">h3</a></span>, <span class='object_link'><a href="PageObject.html#h3s-class_method" title="PageObject.h3s (method)">h3s</a></span>, <span class='object_link'><a href="PageObject.html#h4-class_method" title="PageObject.h4 (method)">h4</a></span>, <span class='object_link'><a href="PageObject.html#h4s-class_method" title="PageObject.h4s (method)">h4s</a></span>, <span class='object_link'><a href="PageObject.html#h5-class_method" title="PageObject.h5 (method)">h5</a></span>, <span class='object_link'><a href="PageObject.html#h5s-class_method" title="PageObject.h5s (method)">h5s</a></span>, <span class='object_link'><a href="PageObject.html#h7-class_method" title="PageObject.h7 (method)">h7</a></span>, <span class='object_link'><a href="PageObject.html#h7s-class_method" title="PageObject.h7s (method)">h7s</a></span>, <span class='object_link'><a href="PageObject.html#hidden-class_method" title="PageObject.hidden (method)">hidden</a></span>, <span class='object_link'><a href="PageObject.html#hiddens-class_method" title="PageObject.hiddens (method)">hiddens</a></span>, <span class='object_link'><a href="PageObject.html#iframe-class_method" title="PageObject.iframe (method)">iframe</a></span>, <span class='object_link'><a href="PageObject.html#iframes-class_method" title="PageObject.iframes (method)">iframes</a></span>, <span class='object_link'><a href="PageObject.html#image-class_method" title="PageObject.image (method)">image</a></span>, <span class='object_link'><a href="PageObject.html#images-class_method" title="PageObject.images (method)">images</a></span>, <span class='object_link'><a href="PageObject.html#initialize-instance_method" title="PageObject#initialize (method)">#initialize</a></span>, <span class='object_link'><a href="PageObject.html#input-class_method" title="PageObject.input (method)">input</a></span>, <span class='object_link'><a href="PageObject.html#inputs-class_method" title="PageObject.inputs (method)">inputs</a></span>, <span class='object_link'><a href="PageObject.html#li-class_method" title="PageObject.li (method)">li</a></span>, <span class='object_link'><a href="PageObject.html#link-class_method" title="PageObject.link (method)">link</a></span>, <span class='object_link'><a href="PageObject.html#links-class_method" title="PageObject.links (method)">links</a></span>, <span class='object_link'><a href="PageObject.html#lis-class_method" title="PageObject.lis (method)">lis</a></span>, <span class='object_link'><a href="PageObject.html#method_missing-instance_method" title="PageObject#method_missing (method)">#method_missing</a></span>, <span class='object_link'><a href="PageObject.html#option-class_method" title="PageObject.option (method)">option</a></span>, <span class='object_link'><a href="PageObject.html#options-class_method" title="PageObject.options (method)">options</a></span>, <span class='object_link'><a href="PageObject.html#page_url-class_method" title="PageObject.page_url (method)">page_url</a></span>, <span class='object_link'><a href="PageObject.html#radio-class_method" title="PageObject.radio (method)">radio</a></span>, <span class='object_link'><a href="PageObject.html#radios-class_method" title="PageObject.radios (method)">radios</a></span>, <span class='object_link'><a href="PageObject.html#select-class_method" title="PageObject.select (method)">select</a></span>, <span class='object_link'><a href="PageObject.html#selects-class_method" title="PageObject.selects (method)">selects</a></span>, <span class='object_link'><a href="PageObject.html#span-class_method" title="PageObject.span (method)">span</a></span>, <span class='object_link'><a href="PageObject.html#spans-class_method" title="PageObject.spans (method)">spans</a></span>, <span class='object_link'><a href="PageObject.html#table-class_method" title="PageObject.table (method)">table</a></span>, <span class='object_link'><a href="PageObject.html#table_cell-class_method" title="PageObject.table_cell (method)">table_cell</a></span>, <span class='object_link'><a href="PageObject.html#table_cells-class_method" title="PageObject.table_cells (method)">table_cells</a></span>, <span class='object_link'><a href="PageObject.html#table_section-class_method" title="PageObject.table_section (method)">table_section</a></span>, <span class='object_link'><a href="PageObject.html#table_sections-class_method" title="PageObject.table_sections (method)">table_sections</a></span>, <span class='object_link'><a href="PageObject.html#tables-class_method" title="PageObject.tables (method)">tables</a></span>, <span class='object_link'><a href="PageObject.html#td-class_method" title="PageObject.td (method)">td</a></span>, <span class='object_link'><a href="PageObject.html#tds-class_method" title="PageObject.tds (method)">tds</a></span>, <span class='object_link'><a href="PageObject.html#text_area-class_method" title="PageObject.text_area (method)">text_area</a></span>, <span class='object_link'><a href="PageObject.html#text_areas-class_method" title="PageObject.text_areas (method)">text_areas</a></span>, <span class='object_link'><a href="PageObject.html#text_field-class_method" title="PageObject.text_field (method)">text_field</a></span>, <span class='object_link'><a href="PageObject.html#text_fields-class_method" title="PageObject.text_fields (method)">text_fields</a></span>, <span class='object_link'><a href="PageObject.html#title-class_method" title="PageObject.title (method)">title</a></span>, <span class='object_link'><a href="PageObject.html#tr-class_method" title="PageObject.tr (method)">tr</a></span>, <span class='object_link'><a href="PageObject.html#trs-class_method" title="PageObject.trs (method)">trs</a></span>, <span class='object_link'><a href="PageObject.html#ul-class_method" title="PageObject.ul (method)">ul</a></span>, <span class='object_link'><a href="PageObject.html#uls-class_method" title="PageObject.uls (method)">uls</a></span></p>
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <p class="notice">This class inherits a constructor from <span class='object_link'><a href="PageObject.html#initialize-instance_method" title="PageObject#initialize (method)">PageObject</a></span></p>
+  
+</div>
+<div id="method_missing_details" class="method_details_list">
+  <h2>Dynamic Method Handling</h2>
+  <p class="notice super">
+    This class handles dynamic methods through the <tt>method_missing</tt> method
+    
+      in the class <span class='object_link'><a href="PageObject.html#method_missing-instance_method" title="PageObject#method_missing (method)">PageObject</a></span>
+    
+  </p>
+  
+</div>
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="task-class_method">
+  
+    + (<tt>Object</tt>) <strong>task</strong>(element_name, selector) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>For each task() defined in the page object these methods are added:</p>
+<ul><li>
+<p>&lt;name&gt; - Returns the task</p>
+</li></ul>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>element_name</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The desired name for the new task.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>selector</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The selector of the select element the selector is designed around.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+14
+15
+16
+17
+18</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'src/pages/tasks_page.rb', line 14</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_task'>task</span><span class='lparen'>(</span><span class='id identifier rubyid_element_name'>element_name</span><span class='comma'>,</span> <span class='id identifier rubyid_selector'>selector</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_define_method'>define_method</span> <span class='id identifier rubyid_element_name'>element_name</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span> <span class='kw'>do</span>
+    <span class='const'>TaskComponent</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='id identifier rubyid_selector'>selector</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="tasks-class_method">
+  
+    + (<tt>Object</tt>) <strong>tasks</strong>(element_name, selector) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>For each tasks() defined in the page object these methods are added:</p>
+<ul><li>
+<p>&lt;name&gt; - Returns the tasks</p>
+</li></ul>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>element_name</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The desired name for the new tasks.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>selector</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The selector of the tasks.  Must be xpath or css selector</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'src/pages/tasks_page.rb', line 24</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_tasks'>tasks</span><span class='lparen'>(</span><span class='id identifier rubyid_element_name'>element_name</span><span class='comma'>,</span> <span class='id identifier rubyid_selector'>selector</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_define_method'>define_method</span> <span class='id identifier rubyid_element_name'>element_name</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span> <span class='kw'>do</span>
+    <span class='id identifier rubyid_found_elements'>found_elements</span> <span class='op'>=</span> <span class='gvar'>$browser</span><span class='period'>.</span><span class='id identifier rubyid_elements'>elements</span><span class='lparen'>(</span><span class='id identifier rubyid_selector'>selector</span><span class='rparen'>)</span>
+    <span class='lparen'>(</span><span class='int'>0</span><span class='op'>..</span><span class='id identifier rubyid_found_elements'>found_elements</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span> <span class='op'>-</span> <span class='int'>1</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_collect'>collect</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_index'>index</span><span class='op'>|</span>
+      <span class='const'>TaskComponent</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span>
+          <span class='id identifier rubyid_selector'>selector</span><span class='lbracket'>[</span><span class='symbol'>:xpath</span><span class='rbracket'>]</span> <span class='op'>?</span> <span class='lbrace'>{</span><span class='label'>xpath:</span> <span class='id identifier rubyid_selector'>selector</span><span class='lbracket'>[</span><span class='symbol'>:xpath</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='label'>index:</span> <span class='id identifier rubyid_index'>index</span><span class='rbrace'>}</span> <span class='op'>:</span> <span class='lbrace'>{</span><span class='label'>css:</span> <span class='id identifier rubyid_selector'>selector</span><span class='lbracket'>[</span><span class='symbol'>:css</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='label'>index:</span> <span class='id identifier rubyid_index'>index</span><span class='rbrace'>}</span>
+      <span class='rparen'>)</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="create_new_task-instance_method">
+  
+    - (<tt>Object</tt>) <strong>create_new_task</strong>(data) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Creates a new task</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>data</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>data</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">title</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+        </li>
+      
+        <li>
+          <span class="name">description</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+        </li>
+      
+        <li>
+          <span class="name">status.</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>'To Do, In Progress, Completed'</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+119
+120
+121
+122
+123
+124
+125</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'src/pages/tasks_page.rb', line 119</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_create_new_task'>create_new_task</span><span class='lparen'>(</span><span class='id identifier rubyid_data'>data</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_new_task'>new_task</span><span class='period'>.</span><span class='id identifier rubyid_click'>click</span>
+  <span class='id identifier rubyid_new_task_title'>new_task_title</span><span class='period'>.</span><span class='id identifier rubyid_when_present'>when_present</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span> <span class='id identifier rubyid_data'>data</span><span class='lbracket'>[</span><span class='symbol'>:title</span><span class='rbracket'>]</span> <span class='kw'>if</span> <span class='id identifier rubyid_data'>data</span><span class='lbracket'>[</span><span class='symbol'>:title</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_new_task_description'>new_task_description</span><span class='period'>.</span><span class='id identifier rubyid_set'>set</span> <span class='id identifier rubyid_data'>data</span><span class='lbracket'>[</span><span class='symbol'>:description</span><span class='rbracket'>]</span> <span class='kw'>if</span> <span class='id identifier rubyid_data'>data</span><span class='lbracket'>[</span><span class='symbol'>:description</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_new_task_status'>new_task_status</span><span class='period'>.</span><span class='id identifier rubyid_select'>select</span> <span class='id identifier rubyid_data'>data</span><span class='lbracket'>[</span><span class='symbol'>:status</span><span class='rbracket'>]</span> <span class='kw'>if</span> <span class='id identifier rubyid_data'>data</span><span class='lbracket'>[</span><span class='symbol'>:status</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_save_new_task'>save_new_task</span><span class='period'>.</span><span class='id identifier rubyid_click'>click</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="move_task-instance_method">
+  
+    - (<tt>Object</tt>) <strong>move_task</strong>(initial, target) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Moves a task well to a specific index within the completed column</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>initial</span>
+      
+      
+        <span class='type'>(<tt>Element</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The element to move</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>target</span>
+      
+      
+        <span class='type'>(<tt>Element</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The element to move to</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'src/pages/tasks_page.rb', line 100</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_move_task'>move_task</span><span class='lparen'>(</span><span class='id identifier rubyid_initial'>initial</span><span class='comma'>,</span> <span class='id identifier rubyid_target'>target</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_initial_x'>initial_x</span> <span class='op'>=</span> <span class='id identifier rubyid_initial'>initial</span><span class='period'>.</span><span class='id identifier rubyid_wd'>wd</span><span class='period'>.</span><span class='id identifier rubyid_location'>location</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>x</span><span class='tstring_end'>'</span></span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_initial_y'>initial_y</span> <span class='op'>=</span> <span class='id identifier rubyid_initial'>initial</span><span class='period'>.</span><span class='id identifier rubyid_wd'>wd</span><span class='period'>.</span><span class='id identifier rubyid_location'>location</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>y</span><span class='tstring_end'>'</span></span><span class='rbracket'>]</span>
+
+  <span class='id identifier rubyid_target_x'>target_x</span> <span class='op'>=</span> <span class='id identifier rubyid_target'>target</span><span class='period'>.</span><span class='id identifier rubyid_wd'>wd</span><span class='period'>.</span><span class='id identifier rubyid_location'>location</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>x</span><span class='tstring_end'>'</span></span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_target_y'>target_y</span> <span class='op'>=</span> <span class='id identifier rubyid_target'>target</span><span class='period'>.</span><span class='id identifier rubyid_wd'>wd</span><span class='period'>.</span><span class='id identifier rubyid_location'>location</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>y</span><span class='tstring_end'>'</span></span><span class='rbracket'>]</span>
+
+  <span class='id identifier rubyid_total_x'>total_x</span> <span class='op'>=</span> <span class='id identifier rubyid_target_x'>target_x</span> <span class='op'>-</span> <span class='id identifier rubyid_initial_x'>initial_x</span> <span class='op'>+</span> <span class='int'>5</span>
+  <span class='id identifier rubyid_total_y'>total_y</span> <span class='op'>=</span> <span class='id identifier rubyid_target_y'>target_y</span> <span class='op'>-</span> <span class='id identifier rubyid_initial_y'>initial_y</span> <span class='op'>+</span> <span class='int'>5</span>
+
+  <span class='id identifier rubyid_initial'>initial</span><span class='period'>.</span><span class='id identifier rubyid_when_present'>when_present</span><span class='period'>.</span><span class='id identifier rubyid_drag_and_drop_by'>drag_and_drop_by</span><span class='lparen'>(</span><span class='id identifier rubyid_total_x'>total_x</span><span class='comma'>,</span> <span class='id identifier rubyid_total_y'>total_y</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_sleep'>sleep</span> <span class='int'>1</span> <span class='comment'>#Allow for motion to happen
+</span><span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="move_task_in_completed-instance_method">
+  
+    - (<tt>Object</tt>) <strong>move_task_in_completed</strong>(from_index, to_index) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Moves a task well to a specific index within the completed column</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>from_index</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The task well to use</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>to_index</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The task well to move to</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+90
+91
+92
+93
+94
+95</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'src/pages/tasks_page.rb', line 90</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_move_task_in_completed'>move_task_in_completed</span><span class='lparen'>(</span><span class='id identifier rubyid_from_index'>from_index</span><span class='comma'>,</span> <span class='id identifier rubyid_to_index'>to_index</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_initial'>initial</span> <span class='op'>=</span> <span class='id identifier rubyid_completed_tasks'>completed_tasks</span><span class='lbracket'>[</span><span class='id identifier rubyid_from_index'>from_index</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_element'>element</span>
+  <span class='id identifier rubyid_target'>target</span> <span class='op'>=</span> <span class='id identifier rubyid_completed_tasks'>completed_tasks</span><span class='lbracket'>[</span><span class='id identifier rubyid_to_index'>to_index</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_element'>element</span>
+
+  <span class='id identifier rubyid_move_task'>move_task</span><span class='lparen'>(</span><span class='id identifier rubyid_initial'>initial</span><span class='comma'>,</span> <span class='id identifier rubyid_target'>target</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="move_task_in_in_progress-instance_method">
+  
+    - (<tt>Object</tt>) <strong>move_task_in_in_progress</strong>(from_index, to_index) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Moves a task well to a specific index within the in_progress column</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>from_index</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The task well to use</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>to_index</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The task well to move to</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+80
+81
+82
+83
+84
+85</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'src/pages/tasks_page.rb', line 80</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_move_task_in_in_progress'>move_task_in_in_progress</span><span class='lparen'>(</span><span class='id identifier rubyid_from_index'>from_index</span><span class='comma'>,</span> <span class='id identifier rubyid_to_index'>to_index</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_initial'>initial</span> <span class='op'>=</span> <span class='id identifier rubyid_in_progress_tasks'>in_progress_tasks</span><span class='lbracket'>[</span><span class='id identifier rubyid_from_index'>from_index</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_element'>element</span>
+  <span class='id identifier rubyid_target'>target</span> <span class='op'>=</span> <span class='id identifier rubyid_in_progress_tasks'>in_progress_tasks</span><span class='lbracket'>[</span><span class='id identifier rubyid_to_index'>to_index</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_element'>element</span>
+
+  <span class='id identifier rubyid_move_task'>move_task</span><span class='lparen'>(</span><span class='id identifier rubyid_initial'>initial</span><span class='comma'>,</span> <span class='id identifier rubyid_target'>target</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="move_task_in_to_do-instance_method">
+  
+    - (<tt>Object</tt>) <strong>move_task_in_to_do</strong>(from_index, to_index) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Moves a task well to a specific index within the to_do column</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>from_index</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The task well to use</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>to_index</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The task well to move to</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+70
+71
+72
+73
+74
+75</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'src/pages/tasks_page.rb', line 70</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_move_task_in_to_do'>move_task_in_to_do</span><span class='lparen'>(</span><span class='id identifier rubyid_from_index'>from_index</span><span class='comma'>,</span> <span class='id identifier rubyid_to_index'>to_index</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_initial'>initial</span> <span class='op'>=</span> <span class='id identifier rubyid_to_do_tasks'>to_do_tasks</span><span class='lbracket'>[</span><span class='id identifier rubyid_from_index'>from_index</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_element'>element</span>
+  <span class='id identifier rubyid_target'>target</span> <span class='op'>=</span> <span class='id identifier rubyid_to_do_tasks'>to_do_tasks</span><span class='lbracket'>[</span><span class='id identifier rubyid_to_index'>to_index</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_element'>element</span>
+
+  <span class='id identifier rubyid_move_task'>move_task</span><span class='lparen'>(</span><span class='id identifier rubyid_initial'>initial</span><span class='comma'>,</span> <span class='id identifier rubyid_target'>target</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Thu Aug 27 14:34:14 2015 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.2.1 (ruby-1.9.3).
+</div>
+
+  </body>
+</html>
