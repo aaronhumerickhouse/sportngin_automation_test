@@ -1,5 +1,12 @@
 # sportngin_automation_test
 
+#Setup
+Mac/Linux -> Follow the Steps below
+Windows -> Bypass all setup and start at the Instructions section
+Ruby and Windows don't play well together.  It's not worth the time to get it setup.
+This being said, if it takes too long to setup on Mac/Linux, move on to Instructions.
+This way we will have at least something as an example to speak to.
+
 ##Install Git
 https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 
@@ -8,7 +15,6 @@ Create github account (if doesn't already exist)
 
 ##Fork project
 Fork the project: https://github.com/aaronhumerickhouse/sportngin_automation_test
-
 
 ##Project Setup
 ###Ensure Ruby is installed
@@ -25,9 +31,6 @@ bundle install
 
 ###Run Tests
 rspec
-
-##Caution
-Don't spend too much time getting the setup to work.  If you can't, try to write the test best you can.  We will be able to talk about decisions that way.
 
 ## Instructions
 I've created two spec files sample_spec.rb and task_spec.rb.  Your job is to complete task_spec.rb based on the example from sample_spec.rb.  The library is setup to do so.  For simplicity, do not worry about using dates at all.
