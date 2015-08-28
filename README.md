@@ -41,5 +41,8 @@ http://www.kalmban.com
 ###Documentation
 Code documentations is found in `doc/index.html`
 
+###Submitting
+Make sure we can have access to your work during the interview.  The preferred method is to keep it on Github under your own account.  We will be able to log in and put it on one of the monitors.  Otherwise, please bring it on a flash drive.
+
 ### Note
 The project uses Watir-Webdriver and a custom created page-object library. Watir-Webdriver is a wrapper around Selenium that's easier to read and use.
