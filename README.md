@@ -2,7 +2,9 @@
 
 #Setup
 Mac/Linux -> Follow the Steps below
+
 Windows -> Bypass all setup and start at the Instructions section
+
 Ruby and Windows don't play well together.  It's not worth the time to get it setup.
 This being said, if it takes too long to setup on Mac/Linux, move on to Instructions.
 This way we will have at least something as an example to speak to.
